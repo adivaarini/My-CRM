@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-app {
+    width: 600px;
+    height: auto;
+    background: #fffcf9f5;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-top: 75px;
+}
+
+h1 {
+    margin: 32px 0;
+    color: rgb(141, 35, 35);
+    font-size: 24px;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.todo-form {
+    margin-bottom: 30px;
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border: 2px solid #000000;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.todo-input::placeholder {
+    color: #e9e8e8;
+}
+
+.todo-button {
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: #3ebeb4;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.todo-input.edit {
+    border: 2px solid #278f81;
+}
+
+.todo-button.edit {
+    background: linear-gradient( 90deg, rgb(75, 121, 145) 0%, rgb(250, 250, 250) 100%);
+    padding: 16px 22px;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient( 90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%);
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+    background: linear-gradient( 75deg, rgb(126, 98, 184) 0%, rgb(246, 241, 250) 100%);
+}
+
+.todo-row:nth-child(4n + 2) {
+    background: linear-gradient( 75deg, rgb(130, 177, 145) 0%, rgb(216, 198, 208) 100%);
+}
+
+.todo-row:nth-child(4n + 3) {
+    background: linear-gradient( 75deg, rgb(65, 97, 97) 0%, rgb(212, 219, 230) 100%);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    margin-right: 5px;
+    color: rgb(223, 86, 86);
+}
+
+.edit-icon {
+    color: rgb(121, 1, 1);
+}

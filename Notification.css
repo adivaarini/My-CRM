@@ -1,0 +1,16 @@
+.mail {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mailItem {
+    flex: 1;
+    margin: 20px 20px;
+    padding: 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-box-shadow: -10px 0px 13px -7px #34ffc2;
+    box-shadow: -10px 0px 13px -7px #34ffc2;
+}
